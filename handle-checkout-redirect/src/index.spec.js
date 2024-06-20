@@ -35,9 +35,10 @@ describe('handleCurrentPageRedirect', () => {
   it('should redirect with params', () => {
     delete window.location;
     window.location = new URL('https://www.fma.com.br/vendas1?utm_source=facebook&utm_medium=cpc&utm_campaign=blackfriday');
-    handleCurrentPageRedirect();
+    handleCurrentPageRedirect(); // first call will save params in local storage
+
     window.location = new URL('https://www.fma.com.br/vendas1?step=checkout_redirect&checkout_url=https%3A%2F%2Fpay.hotmart.com%2FSOMEIDHERE%3Foff%3Dsomeoffcode%26checkoutMode%3D10');
-    handleCurrentPageRedirect();
+    handleCurrentPageRedirect(); // second call see the redirect instruction, and will redirect user setting the window.location property
 
     expect(window.location.toString()).toBe('https://pay.hotmart.com/SOMEIDHERE?off=someoffcode&checkoutMode=10&utm_source=facebook&utm_medium=cpc&utm_campaign=blackfriday');
   });
