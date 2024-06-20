@@ -5,12 +5,15 @@
   "main": "handle-checkout-redirect.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:handle-checkout-redirect": "cd handle-checkout-redirect/ && npx rollup --config rollup.config.mjs"
+    "handle-checkout-redirect:build": "cd handle-checkout-redirect/ && npx vite build",
+    "handle-checkout-redirect:dev": "cd handle-checkout-redirect/ && npx vite dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "rollup": "^4.18.0"
+  "devDependencies": {
+    "rollup": "^4.18.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1"
   }
 }
