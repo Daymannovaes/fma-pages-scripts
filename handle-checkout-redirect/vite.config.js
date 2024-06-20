@@ -6,6 +6,9 @@ function getComputerUsername() {
 }
 
 export default defineConfig({
+  test: {
+    environment: 'jsdom',
+  },
   build: {
     minify: false,
     lib: {
