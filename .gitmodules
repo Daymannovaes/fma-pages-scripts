@@ -1,0 +1,12 @@
+[submodule "gtm-workspace/adsmurai-facebook-conversions-api-client"]
+	path = gtm-workspace/adsmurai-facebook-conversions-api-client
+	url = https://github.com/Adsmurai-Google-Tag-Manager-Templates/adsmurai-facebook-conversions-api-client
+[submodule "gtm-workspace/adsmurai-facebook-conversions-api-tag"]
+	path = gtm-workspace/adsmurai-facebook-conversions-api-tag
+	url = https://github.com/Adsmurai-Google-Tag-Manager-Templates/adsmurai-facebook-conversions-api-tag
+[submodule "gtm-workspace/adsmurai-facebook-pixel-and-conversions-api"]
+	path = gtm-workspace/adsmurai-facebook-pixel-and-conversions-api
+	url = https://github.com/Adsmurai-Google-Tag-Manager-Templates/adsmurai-facebook-pixel-and-conversions-api
+[submodule "gtm-workspace/stapes-io-facebook-tag"]
+	path = gtm-workspace/stapes-io-facebook-tag
+	url = https://github.com/stape-io/facebook-tag
